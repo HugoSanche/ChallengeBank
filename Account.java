@@ -5,6 +5,25 @@ public class Account {
     private String customerEmail;
     private String customerPhone;
 
+    //default contructor with any parameters
+    public Account(){
+        //check you dont write anything before call the constructor this();
+        //System.out.println("Constructor sin parametros");
+        this("5415",100.00,"No name value","No email value","No customer phone value");
+        System.out.println("Constructor sin parametros");
+    }
+
+    //constructor with anly three parameters
+    public Account(String customerName, String customerEmail, String customerPhone) {
+        this("0001",300.00,customerName,customerEmail,customerPhone);
+       // this.number = number;
+       // this.balance = balance;
+       // this.customerName = customerName;
+       // this.customerEmail = customerEmail;
+       // this.customerPhone = customerPhone;
+
+        System.out.println("Constructor con 3 parametros");
+    }
 
     public Account(String number, double balance, String customerName, String customerEmail, String customerPhone) {
         this.number = number;
@@ -12,6 +31,8 @@ public class Account {
         this.customerName = customerName;
         this.customerEmail = customerEmail;
         this.customerPhone = customerPhone;
+
+        System.out.println("Constructor completo");
     }
 
     public String getNumber() {
