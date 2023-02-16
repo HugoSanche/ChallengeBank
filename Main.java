@@ -1,6 +1,23 @@
 public class Main {
     public static void main(String[] args) {
 
+        Customer sinArgumentos=new Customer();
+
+        System.out.println(sinArgumentos.getName());
+        System.out.println(sinArgumentos.getCreditLimit());
+        System.out.println(sinArgumentos.getCustomerEmail());
+
+        Customer dosArgumentos=new Customer("Veronica", "Verito.com");
+        System.out.println(dosArgumentos.getName());
+        System.out.println(dosArgumentos.getCreditLimit());
+        System.out.println(dosArgumentos.getCustomerEmail());
+
+        Customer tresArgumentos=new Customer("titina",100.00, "titina.com");
+        System.out.println(tresArgumentos.getName());
+        System.out.println(tresArgumentos.getCreditLimit());
+        System.out.println(tresArgumentos.getCustomerEmail());
+
+        System.out.println("*****************************************************************************");
         //Constructor with out parameters
         Account hugo =new Account();
         System.out.println(hugo.getNumber());
